@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Vighnesh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Vighnesh</h1>
+            <p class="subtitle">Software Developer</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload Resume</h2>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📄</div>
+                    <p>Drag and drop your resume here or <span class="upload-link">browse files</span></p>
+                    <input type="file" id="fileInput" accept=".pdf,.doc,.docx" hidden>
+                </div>
+            </div>
+            <div class="file-info" id="fileInfo" style="display: none;">
+                <p>Selected file: <span id="fileName"></span></p>
+                <button id="uploadBtn" class="upload-btn">Upload Resume</button>
+            </div>
+        </section>
+
+        <section class="resume-display" id="resumeDisplay" style="display: none;">
+            <h2>Current Resume</h2>
+            <div class="resume-preview">
+                <iframe id="resumeFrame" width="100%" height="600px"></iframe>
+            </div>
+            <div class="resume-actions">
+                <button id="downloadBtn" class="action-btn">Download</button>
+                <button id="replaceBtn" class="action-btn secondary">Replace</button>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h2>About</h2>
+            <p>Welcome to my resume portal. Upload your resume using the form above to showcase your professional experience.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
